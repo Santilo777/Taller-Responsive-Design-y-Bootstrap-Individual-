@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personalizada</title>
+    <!-- Incluir Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar con Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi Sitio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Dolor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Amet</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="input-group mt-2 mt-lg-0 ml-lg-auto"> <!-- Cambio: Mover al borde izquierdo y agregar clase ml-lg-auto -->
+                <input class="form-control form-control-sm" type="search" placeholder="Buscar" aria-label="Buscar"> <!-- Cambio: Reducir el tamaño -->
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Título -->
+    <div class="container mt-5">
+        <h1 class="text-center">Lorem impsum...</h1>
+    </div>
+
+    <div class="container mt-4">
+        <div class="carousel-container">
+            <div class="carousel slide" id="myCarousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h4 id="carouselTitle">Texto Inicial</h4>
+                    </div>
+                    <!-- Agrega más elementos de carrusel aquí -->
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Opciones -->
+            <div class="col-md-4">
+                <div class="btn-group-vertical">
+                    <button type="button" class="btn btn-secondary">Opción 1</button>
+                    <button type="button" class="btn btn-secondary">Opción 2</button>
+                    <button type="button" class="btn btn-secondary">Opción 3</button>
+                    <button type="button" class="btn btn-secondary">Opción 4</button>
+                </div>
+            </div>
+
+            <!-- Columnas de texto lorem -->
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptates voluptatem eveniet, 
+                            impedit fugiat cum cupiditate odio dolor suscipit, a ullam ipsa itaque quas possimus rem beatae doloribus repellat in!
+                            <br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint assumenda explicabo enim laudantium quae, laborum, facere
+                            animi praesentium quas aliquam provident ipsa illum blanditiis. Sequi eum sit eaque magnam. Dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptates voluptatem eveniet, 
+                            impedit fugiat cum cupiditate odio dolor suscipit, a ullam ipsa itaque quas possimus rem beatae doloribus repellat in!
+                            <br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint assumenda explicabo enim laudantium quae, laborum, facere
+                            animi praesentium quas aliquam provident ipsa illum blanditiis. Sequi eum sit eaque magnam. Dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptates voluptatem eveniet, 
+                            impedit fugiat cum cupiditate odio dolor suscipit, a ullam ipsa itaque quas possimus rem beatae doloribus repellat in!
+                            <br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint assumenda explicabo enim laudantium quae, laborum, facere
+                            animi praesentium quas aliquam provident ipsa illum blanditiis. Sequi eum sit eaque magnam. Dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

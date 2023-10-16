@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar-left h1 {
+    margin: 0;
+}
+
+.navbar-options {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-options li {
+    display: inline;
+}
+
+.navbar-options a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-right input[type="text"] {
+    padding: 5px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.carousel-item {
+    padding: 20px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.content-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.content-block {
+    flex: 1;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-left: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para el carrusel */
+.carousel-container {
+    margin: 20px;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    border: 2px solid #333;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilos para el texto */
+h1, .carousel-item p {
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* Estilos para el botón de mostrar/ocultar opciones y buscador en 'md' */
+#toggleButton {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    /* Estilos para pantallas de tamaño 'md' (992px o menos) */
+    .navbar .navbar-nav,
+    .btn-group-vertical {
+        display: none; /* Ocultar las opciones de la barra de navegación y las 4 opciones */
+    }
+    .navbar {
+        border: 1px solid #333;
+    }
+
+    /* Estilos para las columnas de texto en 'md' (2 columnas) */
+    .col-md-4 {
+        width: 50%;
+    }
+
+    /* Estilos para el botón de mostrar/ocultar opciones y buscador en 'md' */
+    #toggleButton {
+        display: block;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Estilos para pantallas de tamaño 'sm' (768px o menos) */
+    /* Una sola columna para las columnas de texto en 'sm' */
+    .col-md-4 {
+        width: 100%;
+    }
+}
